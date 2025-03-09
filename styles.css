@@ -19,11 +19,6 @@
   --text-color-soft: #2c3e50;
   --text-color-lighter: #34495e;
   --card-text: rgba(255, 255, 255, 0.95);
-  --global-margin: 4rem;
-  --global-padding: 3rem;
-  --global-border-radius: 15px;
-  --global-shadow: 0 5px 15px rgba(34,175,175,0.08);
-  --global-border: 1px solid rgba(34,175,175,0.1);
 }
 
 * {
@@ -44,7 +39,7 @@ body {
 }
 
 section {
-  padding: var(--global-padding) 0;
+  padding: 4rem 0;
   min-height: 100vh;
   width: 100%;
   display: flex;
@@ -52,12 +47,12 @@ section {
   justify-content: center;
   position: relative;
   overflow: hidden;
-  margin: var(--global-margin) 0;
-  border-radius: var(--global-border-radius);
+  margin: 2rem 0;
+  border-radius: 20px;
   background: rgba(255, 255, 255, 0.02);
-  box-shadow: var(--global-shadow);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.06);
   backdrop-filter: blur(4px);
-  border: var(--global-border);
+  border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 section::before {
@@ -77,8 +72,8 @@ section::before {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: var(--global-padding);
-  border-radius: var(--global-border-radius);
+  padding: 3rem 4rem;
+  border-radius: 15px;
 }
 
 /* Estilo padrão para todos os títulos */
@@ -203,19 +198,19 @@ p {
   flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 2rem;
-  padding: var(--global-padding);
+  padding: 2rem;
   gap: 2rem;
-  margin: var(--global-margin) 0;
+  margin: 2rem 0;
 }
 
 .value-card {
   width: 30%;
   background: white;
-  padding: var(--global-padding);
-  border-radius: var(--global-border-radius);
-  box-shadow: var(--global-shadow);
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
   margin: 1rem 0;
-  border: var(--global-border);
+  border: 1px solid rgba(34, 175, 175, 0.1);
   transition: transform var(--transition-speed);
   cursor: pointer;
 }
@@ -255,19 +250,19 @@ p {
   flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 2rem;
-  padding: var(--global-padding);
+  padding: 2rem;
   gap: 2rem;
-  margin: var(--global-margin) 0;
+  margin: 2rem 0;
 }
 
 .objective-card {
   width: 48%;
   background: rgba(255, 255, 255, 0.95);
-  padding: var(--global-padding);
-  border-radius: var(--global-border-radius);
-  box-shadow: var(--global-shadow);
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
   margin: 1rem 0;
-  border: var(--global-border);
+  border: 1px solid rgba(34, 175, 175, 0.1);
   transition: all var(--transition-speed);
   cursor: pointer;
 }
@@ -319,8 +314,8 @@ p {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
-  margin: var(--global-margin) 0;
-  padding: var(--global-padding);
+  margin: 2rem 0;
+  padding: 2rem;
 }
 
 .benefit-group h3 {
@@ -330,11 +325,11 @@ p {
 
 .benefit-item {
   background: rgba(255, 255, 255, 0.95);
-  padding: var(--global-padding);
-  border-radius: var(--global-border-radius);
-  box-shadow: var(--global-shadow);
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
   margin: 1rem 0;
-  border: var(--global-border);
+  border: 1px solid rgba(34, 175, 175, 0.1);
   transition: all var(--transition-speed);
   border: 1px solid rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
@@ -418,11 +413,11 @@ p {
   border-left: 4px solid var(--accent-color);
   margin-left: 20px;
   background: rgba(255, 255, 255, 0.95);
-  border-radius: var(--global-border-radius);
-  padding: var(--global-padding);
+  border-radius: 15px;
+  padding: 2rem;
   margin: 1rem 0;
-  box-shadow: var(--global-shadow);
-  border: var(--global-border);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(34, 175, 175, 0.1);
   transition: all 0.3s ease;
 }
 
@@ -443,19 +438,19 @@ p {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 2rem;
-  margin: var(--global-margin) 0;
-  padding: var(--global-padding);
+  margin: 2rem 0;
+  padding: 2rem;
 }
 
 .team-card {
   background: rgba(255, 255, 255, 0.95);
-  border-radius: var(--global-border-radius);
+  border-radius: 15px;
   overflow: hidden;
-  box-shadow: var(--global-shadow);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
   transition: transform var(--transition-speed);
   position: relative;
   margin: 1rem 0;
-  border: var(--global-border);
+  border: 1px solid rgba(34, 175, 175, 0.1);
 }
 
 .team-card:hover {
@@ -806,17 +801,17 @@ display: grid;
 grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 gap: 30px;
 margin-top: 50px;
-padding: var(--global-padding);
-margin: var(--global-margin) 0;
+padding: 2rem;
+margin: 2rem 0;
 }
 
 .condition-card {
 background: rgba(255, 255, 255, 0.95);
-border-radius: var(--global-border-radius);
-padding: var(--global-padding);
-box-shadow: var(--global-shadow);
+border-radius: 15px;
+padding: 2rem;
+box-shadow: 0 4px 15px rgba(0,0,0,0.05);
 margin: 1rem 0;
-border: var(--global-border);
+border: 1px solid rgba(34, 175, 175, 0.1);
 transition: all 0.4s ease;
 position: relative;
 overflow: hidden;
@@ -1046,7 +1041,7 @@ margin: 3rem auto;
 
 .checklist-item {
 background: rgba(255, 255, 255, 0.95);
-border-radius: var(--global-border-radius);
+border-radius: 15px;
 margin-bottom: 1.5rem;
 box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 transition: all 0.4s ease;
@@ -1439,7 +1434,7 @@ display: none;
 display: grid;
 grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 gap: 2rem;
-padding: var(--global-padding);
+padding: 2rem;
 }
 
 .dynamic-card {
@@ -1465,8 +1460,8 @@ position: absolute;
 width: 100%;
 height: 100%;
 backface-visibility: hidden;
-border-radius: var(--global-border-radius);
-padding: var(--global-padding);
+border-radius: 15px;
+padding: 2rem;
 }
 
 .card-front {
@@ -1493,7 +1488,7 @@ transform: rotateY(180deg);
 display: flex;
 align-items: center;
 text-align: center;
-padding: var(--global-padding);
+padding: 2rem;
 }
 
 @keyframes float {
@@ -1537,7 +1532,7 @@ height: 250px;
 display: grid;
 grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 gap: 2rem;
-padding: var(--global-padding);
+padding: 2rem;
 }
 
 .mvv-card {
@@ -1564,8 +1559,8 @@ position: absolute;
 width: 100%;
 height: 100%;
 backface-visibility: hidden;
-border-radius: var(--global-border-radius);
-padding: var(--global-padding);
+border-radius: 15px;
+padding: 2rem;
 overflow: hidden; /* Removido overflow-y: auto */
 }
 
@@ -1747,7 +1742,7 @@ font-size: 0.9rem;
 display: grid;
 grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 gap: 2rem;
-padding: var(--global-padding);
+padding: 2rem;
 width: 100%;
 max-width: 1200px;
 margin: 0 auto;
@@ -1772,8 +1767,8 @@ position: absolute;
 width: 100%;
 height: 100%;
 backface-visibility: hidden;
-border-radius: var(--global-border-radius);
-padding: var(--global-padding);
+border-radius: 15px;
+padding: 2rem;
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -1980,8 +1975,8 @@ padding: 0 2rem;
 
 .context-card {
 background: white;
-border-radius: var(--global-border-radius);
-padding: var(--global-padding);
+border-radius: 15px;
+padding: 2rem;
 box-shadow: 0 5px 15px rgba(34,175,175,0.08);
 transition: transform 0.3s ease;
 height: 400px;
@@ -2007,7 +2002,7 @@ position: absolute;
 width: 100%;
 height: 100%;
 backface-visibility: hidden;
-border-radius: var(--global-border-radius);
+border-radius: 15px;
 padding: 1.5rem; /* Reduzido para dar mais espaço ao texto */
 display: flex;
 flex-direction: column;
@@ -2192,8 +2187,8 @@ position: absolute;
 width: 100%;
 height: 100%;
 backface-visibility: hidden;
-border-radius: var(--global-border-radius);
-padding: var(--global-padding);
+border-radius: 15px;
+padding: 2rem;
 overflow: auto; /* Add overflow to prevent text from spilling out */
 }
 
@@ -2224,7 +2219,7 @@ transform: rotateY(180deg);
 display: flex;
 align-items: center;
 justify-content: center;
-padding: var(--global-padding);
+padding: 2rem;
 text-align: center;
 }
 
@@ -2330,8 +2325,8 @@ position: absolute;
 width: 100%;
 height: 100%;
 backface-visibility: hidden;
-border-radius: var(--global-border-radius);
-padding: var(--global-padding);
+border-radius: 15px;
+padding: 2rem;
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -2416,8 +2411,8 @@ padding: 0 2rem;
 /* Card de Objetivos */
 .objective-card {
 background: white;
-border-radius: var(--global-border-radius);
-padding: var(--global-padding);
+border-radius: 15px;
+padding: 2rem;
 box-shadow: 0 5px 15px rgba(34,175,175,0.08);
 transition: transform 0.3s ease;
 aspect-ratio: 1; /* Mantém o card quadrado */
@@ -2499,8 +2494,8 @@ height: 300px;
 
 .context-card {
   background: white;
-  border-radius: var(--global-border-radius);
-  padding: var(--global-padding);
+  border-radius: 15px;
+  padding: 2rem;
   box-shadow: 0 5px 15px rgba(34,175,175,0.08);
   transition: transform 0.3s ease;
   width: 300px;
@@ -2531,7 +2526,7 @@ height: 300px;
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
-  border-radius: var(--global-border-radius);
+  border-radius: 15px;
   padding: 1.5rem;
   display: flex;
   flex-direction: column;
@@ -2606,7 +2601,7 @@ height: 300px;
 
 .context-card {
   background: white;
-  border-radius: var(--global-border-radius);
+  border-radius: 15px;
   padding: 1.5rem;
   box-shadow: 0 5px 15px rgba(34,175,175,0.08);
   transition: transform 0.3s ease;
@@ -2635,7 +2630,7 @@ height: 300px;
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
-  border-radius: var(--global-border-radius);
+  border-radius: 15px;
   padding: 1.5rem;
   display: flex;
   flex-direction: column;
@@ -2716,7 +2711,7 @@ height: 300px;
 
 .context-card {
   background: white;
-  border-radius: var(--global-border-radius);
+  border-radius: 15px;
   padding: 1.5rem;
   box-shadow: 0 5px 15px rgba(34,175,175,0.08);
   transition: transform 0.3s ease;
@@ -2745,7 +2740,7 @@ height: 300px;
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
-  border-radius: var(--global-border-radius);
+  border-radius: 15px;
   padding: 1.5rem;
   display: flex;
   flex-direction: column;
@@ -2825,8 +2820,8 @@ height: 300px;
 
 .pillar-card {
   background: white;
-  border-radius: var(--global-border-radius);
-  padding: var(--global-padding);
+  border-radius: 15px;
+  padding: 2rem;
   box-shadow: 0 5px 15px rgba(34,175,175,0.08);
   text-align: center;
   transition: transform 0.3s ease;
@@ -2856,7 +2851,7 @@ height: 300px;
 /* Detalhamento do Primeiro Pilar */
 .pillar-details {
   background: white;
-  border-radius: var(--global-border-radius);
+  border-radius: 15px;
   padding: 2.5rem;
   box-shadow: 0 5px 15px rgba(34,175,175,0.08);
   margin-top: 3rem;
@@ -2945,18 +2940,18 @@ height: 300px;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
   margin: 2rem 0;
-  padding: var(--global-padding);
+  padding: 2rem;
 }
 
 .analysis-card {
   background: rgba(255, 255, 255, 0.95);
-  padding: var(--global-padding);
-  border-radius: var(--global-border-radius);
+  padding: 2rem;
+  border-radius: 15px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s ease;
   text-align: center;
   margin: 1rem 0;
-  border: var(--global-border);
+  border: 1px solid rgba(34, 175, 175, 0.1);
 }
 
 .analysis-card:hover {
@@ -3059,7 +3054,7 @@ height: 300px;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
   margin: 2rem 0;
-  padding: var(--global-padding);
+  padding: 2rem;
 }
 
 .context-card {
@@ -3073,7 +3068,7 @@ height: 300px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
   margin: 1rem 0;
-  border: var(--global-border);
+  border: 1px solid rgba(34, 175, 175, 0.1);
 }
 
 .context-card:hover,
@@ -3107,20 +3102,20 @@ height: 300px;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
   margin: 2rem 0;
-  padding: var(--global-padding);
+  padding: 2rem;
 }
 
 .objective-card {
   background: rgba(255, 255, 255, 0.95);
   border-radius: 10px;
-  padding: var(--global-padding);
+  padding: 2rem;
   height: auto;
   display: flex;
   flex-direction: column;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   margin: 1rem 0;
-  border: var(--global-border);
+  border: 1px solid rgba(34, 175, 175, 0.1);
 }
 
 .objective-card:hover {
@@ -3193,106 +3188,5 @@ height: 300px;
 @media (min-width: 769px) and (max-width: 1200px) {
   .context-cards {
     grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-/* Ajuste global das margens e padding */
-:root {
-  --global-margin: 4rem;
-  --global-padding: 3rem;
-  --global-border-radius: 15px;
-  --global-shadow: 0 5px 15px rgba(34,175,175,0.08);
-  --global-border: 1px solid rgba(34,175,175,0.1);
-}
-
-/* Container global */
-.container {
-  width: 100%;
-  max-width: var(--container-max-width);
-  margin: 0 auto;
-  padding: var(--global-padding);
-  border-radius: var(--global-border-radius);
-}
-
-/* Seções */
-section {
-  margin: var(--global-margin) 0;
-  padding: var(--global-padding) 0;
-  border-radius: var(--global-border-radius);
-  background: rgba(255, 255, 255, 0.02);
-  box-shadow: var(--global-shadow);
-  border: var(--global-border);
-}
-
-/* Cards e componentes */
-.card,
-.analysis-card,
-.benefit-card,
-.context-card,
-.objective-card,
-.pillar-card,
-.team-card,
-.value-card,
-.mvv-card,
-.timeline-item,
-.legal-item,
-.condition-card {
-  margin: 1rem 0;
-  padding: var(--global-padding);
-  border-radius: var(--global-border-radius);
-  box-shadow: var(--global-shadow);
-  border: var(--global-border);
-}
-
-/* Grids e containers */
-.analysis-cards,
-.benefits-grid,
-.context-cards,
-.objectives-grid,
-.team-grid,
-.values-container,
-.pillars-container,
-.conditions-grid {
-  margin: 2rem 0;
-  padding: var(--global-padding);
-  gap: 2rem;
-}
-
-/* Ajuste responsivo das margens */
-@media (max-width: 768px) {
-  :root {
-    --global-margin: 2rem;
-    --global-padding: 1.5rem;
-  }
-
-  .container {
-    padding: var(--global-padding);
-  }
-
-  section {
-    margin: var(--global-margin) 0;
-    padding: var(--global-padding) 0;
-  }
-
-  .card,
-  .analysis-card,
-  .benefit-card,
-  .context-card,
-  .objective-card,
-  .pillar-card,
-  .team-card,
-  .value-card,
-  .mvv-card,
-  .timeline-item,
-  .legal-item,
-  .condition-card {
-    padding: calc(var(--global-padding) * 0.8);
-  }
-}
-
-@media (max-width: 480px) {
-  :root {
-    --global-margin: 1.5rem;
-    --global-padding: 1rem;
   }
 }
