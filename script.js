@@ -274,3 +274,30 @@ function initSmoothScroll() {
     });
   });
 }
+
+  document.addEventListener('DOMContentLoaded', function() {
+    // Selecionar todos os botões de tab
+    const tabButtons = document.querySelectorAll('.tab-button');
+    
+    // Adicionar evento de clique a cada botão
+    tabButtons.forEach(button => {
+      button.addEventListener('click', function() {
+        // Remover classe 'active' de todos os botões
+        tabButtons.forEach(btn => btn.classList.remove('active'));
+        
+        // Adicionar classe 'active' ao botão clicado
+        this.classList.add('active');
+        
+        // Obter o ID da tab a ser exibida
+        const tabId = this.getAttribute('data-tab') + '-tab';
+        
+        // Esconder todos os conteúdos de tab
+        document.querySelectorAll('.tab-content').forEach(tab => {
+          tab.classList.remove('active');
+        });
+        
+        // Mostrar o conteúdo da tab selecionada
+        document.getElementById(tabId).classList.add('active');
+      });
+    });
+  });
